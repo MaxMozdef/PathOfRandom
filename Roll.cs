@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Roll : MonoBehaviour
 {
@@ -6,6 +7,8 @@ public class Roll : MonoBehaviour
     float speedOfRoll;
     float speedReduction;
     float curentSpeed;
+
+    [SerializeField] Button rollClass;
 
     public static bool isRollEnd;
 
@@ -24,14 +27,17 @@ public class Roll : MonoBehaviour
 
     void MakeParametersRandom()
     {
-        speedOfRoll = Random.Range(222, 899);
-        speedReduction = Random.Range(0.7f, 5);
+        speedOfRoll = Random.Range(422f, 1099f);
+        speedReduction = Random.Range(0.7f, 9f);
     }
 
     void SpeedRoll()
     {
         if (isRollStart)
+        {
             curentSpeed = speedOfRoll -= speedReduction;
+            rollClass.interactable = false;
+        }
     }
 
     public void StartRoll() => isRollStart = true;
@@ -49,6 +55,7 @@ public class Roll : MonoBehaviour
             curentSpeed = 0;
             isRollEnd = true;
             isRollStart = false;
+
         }
     }
 }
