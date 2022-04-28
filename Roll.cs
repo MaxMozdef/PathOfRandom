@@ -14,7 +14,6 @@ public class Roll : MonoBehaviour
 
     void Start()
     {
-        
         MakeParametersRandom();
     }
     

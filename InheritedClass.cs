@@ -6,6 +6,7 @@ public class InheritedClass : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI showClass, descriptonLinkClass;
     [SerializeField] Button choiseSkill, nameClassLink;
+    public static string nameClass;
 
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -13,7 +14,7 @@ public class InheritedClass : MonoBehaviour
         {
             if (collision.tag == "Cursor")
             {
-                showClass.text = gameObject.name;
+                nameClass = (showClass.text = gameObject.name);
                 ShowNextUI();
             }
         }
