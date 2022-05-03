@@ -7,6 +7,7 @@ public class ChoiseSkill : MonoBehaviour
     [SerializeField] GameObject choiseSkillPanel, coiseCharakterButtons;
     [SerializeField] Image classImage;
     [SerializeField] List<Sprite> listOfClasses;
+
     int indexListOfClasses;
 
     private void Update()
@@ -23,7 +24,7 @@ public class ChoiseSkill : MonoBehaviour
 
     void showClassImage()
     {
-        if (InheritedClass.nameClass == "Ascendant")        
+        if (InheritedClass.nameClass == "Ascendant")
             indexListOfClasses = 0;
         if (InheritedClass.nameClass == "Assassin")
             indexListOfClasses = 1;

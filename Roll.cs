@@ -3,12 +3,12 @@ using UnityEngine.UI;
 
 public class Roll : MonoBehaviour
 {
+    [SerializeField] Button rollClass;
+
     bool isRollStart;
     float speedOfRoll;
     float speedReduction;
     float curentSpeed;
-
-    [SerializeField] Button rollClass;
 
     public static bool isRollEnd;
 

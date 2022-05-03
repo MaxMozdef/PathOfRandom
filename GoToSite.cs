@@ -6,6 +6,7 @@ public class GoToSite : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI goToPathOfExileSite;
     [SerializeField] Button nameClassLink;
+
     string linkOnClass;
 
     private void Update()
