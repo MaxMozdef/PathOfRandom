@@ -12,10 +12,7 @@ public class Roll : MonoBehaviour
 
     public static bool isRollEnd;
 
-    void Start()
-    {
-        MakeParametersRandom();
-    }
+    void Start() => MakeParametersRandom();
     
     void FixedUpdate()
     {

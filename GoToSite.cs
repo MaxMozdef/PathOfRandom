@@ -9,15 +9,9 @@ public class GoToSite : MonoBehaviour
 
     string linkOnClass;
 
-    private void Update()
-    {
-        CreatesLinkToNameClasses();
-    }
+    private void Update() => CreatesLinkToNameClasses();
 
-    public void goToPathOfExileSiteLogic()
-    {
-        Application.OpenURL(linkOnClass);
-    }
+    public void goToPathOfExileSiteLogic() => Application.OpenURL(linkOnClass);
 
     void CreatesLinkToNameClasses()
     {

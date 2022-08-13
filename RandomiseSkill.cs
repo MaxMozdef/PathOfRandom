@@ -15,14 +15,11 @@ public class RandomiseSkill : MonoBehaviour
     string linkPoeDB;
     bool randomizeSkillEnd;
 
-    private void Update()
-    {
-        PrintInfoSlills();
-    }
+    private void Update() => PrintInfoSlills();
 
     public void RollSlills()
     {
-        indeksSkill = Random.Range(0, 182);
+        indeksSkill = Random.Range(0, 185);
         randomizeSkillEnd = true;
         ShowSkillAtributes();
     }
@@ -1132,6 +1129,24 @@ public class RandomiseSkill : MonoBehaviour
             skillImege.sprite = skillImages[182];
             nameSkill.text = "Wintertide Brand";
             linkPoeDB = "Wintertide_Brand";
+        }
+        if (indeksSkill == 183)
+        {
+            skillImege.sprite = skillImages[183];
+            nameSkill.text = "Lightning Conduit";
+            linkPoeDB = "Lightning_Conduit";
+        }
+        if (indeksSkill == 184)
+        {
+            skillImege.sprite = skillImages[184];
+            nameSkill.text = "Galvanic Field";
+            linkPoeDB = "Galvanic_Field";
+        }
+        if (indeksSkill == 185)
+        {
+            skillImege.sprite = skillImages[185];
+            nameSkill.text = "Alchemists Mark";
+            linkPoeDB = "Alchemists_Mark";
         }
     }
 
